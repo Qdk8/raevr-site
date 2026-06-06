@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAEVR — System Architect</title>
+<meta name="description" content="RAEVR — System Architect. Real systems, real automations. No hype, no panic. Just systems that hold.">
+<meta name="author" content="RAEVR">
+<meta property="og:title" content="RAEVR — Stay calm. Keep it real.">
+<meta property="og:description" content="Real systems. No hype, no panic.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raevr.com/">
+<meta name="theme-color" content="#0A0A09">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,300;9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --black:#0A0A09;
+  --white:#F2EFE8;
+  --green:#5FE3D6;
+  --muted:rgba(242,239,232,0.62);
+  --rule:rgba(242,239,232,0.14);
+}
+html,body{height:100%;}
+body{font-family:'DM Sans',sans-serif;background:var(--black);color:var(--white);overflow:hidden;}
+.mono{font-family:'JetBrains Mono',monospace;}
+::selection{background:var(--green);color:var(--black);}
+
+.poster{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;}
+.poster-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+.poster-scrim{position:absolute;inset:0;z-index:1;background:
+  linear-gradient(180deg,rgba(10,10,9,0.55) 0%,rgba(10,10,9,0.15) 30%,rgba(10,10,9,0.30) 55%,rgba(10,10,9,0.92) 100%);}
+
+.frame{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:1.6rem 2.4rem 2rem;}
+
+.bar{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;}
+.logo-word{font-family:'Anton',sans-serif;font-size:1.4rem;letter-spacing:0.06em;color:var(--white);line-height:1;text-shadow:0 1px 8px rgba(0,0,0,0.4);}
+.logo-word .dot{color:var(--green);}
+.status{text-align:right;font-family:'JetBrains Mono',monospace;font-size:0.72rem;line-height:1.8;letter-spacing:0.04em;color:var(--muted);}
+.status .on{color:var(--green);}
+
+.edge-url{position:absolute;left:0.7rem;top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;z-index:2;
+  font-family:'JetBrains Mono',monospace;font-size:0.7rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--muted);}
+
+.center{max-width:1100px;}
+.kicker{font-family:'JetBrains Mono',monospace;font-size:0.74rem;letter-spacing:0.14em;text-transform:lowercase;color:var(--green);margin-bottom:1.4rem;}
+.line{font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(2.8rem,8vw,7.2rem);line-height:0.94;letter-spacing:-0.03em;text-shadow:0 2px 40px rgba(0,0,0,0.35);}
+.line .accent{color:var(--green);}
+
+.foot{display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;border-top:1px solid var(--rule);padding-top:1.3rem;}
+.sub{font-size:0.95rem;line-height:1.55;font-weight:300;color:var(--white);max-width:430px;}
+.sign{text-align:right;font-family:'JetBrains Mono',monospace;font-size:0.72rem;line-height:1.9;letter-spacing:0.03em;color:var(--muted);white-space:nowrap;}
+.sign a{color:var(--white);text-decoration:none;border-bottom:1px solid var(--green);padding-bottom:1px;transition:color 0.2s;}
+.sign a:hover{color:var(--green);}
+
+@media(max-width:768px){
+  .frame{padding:1.1rem 1.2rem 1.4rem;}
+  .edge-url{display:none;}
+  .logo-word{height:20px;}
+  .line{font-size:clamp(2.8rem,15vw,5rem);}
+  .foot{flex-direction:column;align-items:flex-start;gap:1rem;}
+  .sign{text-align:left;white-space:normal;}
+  .status{font-size:0.64rem;}
+}
+</style>
+</head>
+<body>
+
+<section class="poster">
+  <video class="poster-video" autoplay muted loop playsinline preload="metadata" poster="hero.jpg">
+    <source src="hero.mp4" type="video/mp4">
+  </video>
+  <div class="poster-scrim"></div>
+
+  <div class="edge-url">raevr.com</div>
+
+  <div class="frame">
+
+    <div class="bar">
+      <span class="logo-word">RAEVR<span class="dot">.</span></span>
+      <div class="status">
+        <div><span class="on">●</span> work in progress</div>
+        <div>more soon</div>
+      </div>
+    </div>
+
+    <div class="center">
+      <p class="kicker">// system architect</p>
+      <h1 class="line">AI scales power.<br>Choose your goals<br><span class="accent">carefully.</span></h1>
+    </div>
+
+    <div class="foot">
+      <p class="sub">No hype, no panic. Just systems that hold.</p>
+      <div class="sign">
+        <div>RAEVR — System Architect</div>
+        <div>Paris · remote</div>
+        <div><a href="mailto:quentin@raevr.com">quentin@raevr.com</a></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
