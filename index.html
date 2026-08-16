@@ -934,6 +934,29 @@ section:not(#hero) {
 
 footer { background: #0b0913; }
 
+/* Desktop legibility pass: preserve the composition while making the
+   editorial micro-type readable on large and high-density displays. */
+@media (min-width: 641px) {
+  .nav-links a { font-size: 12px; }
+
+  .hero-kicker { font-size: clamp(12px, 1.15svh, 14px); }
+  .hero-side-note,
+  .hero-legend { font-size: 11px; }
+
+  .raevr-orbit-intro,
+  .raevr-orbit-item { font-size: clamp(12px, 1.35svh, 15px); }
+
+  .section-label { font-size: 13px; }
+  #built::before,
+  .proof-row::before { font-size: 11px; }
+  .proof-tag { font-size: 13px; }
+
+  .pill-label { font-size: 13px; }
+  .cta-email,
+  .footer-left,
+  .footer-right { font-size: 12px; }
+}
+
 @media (max-width: 640px) {
   nav { padding: 18px 20px; }
   .nav-links { gap: 14px; }
