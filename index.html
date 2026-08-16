@@ -522,7 +522,7 @@ footer {
    ============================================================ */
 .raevr-orbit-shell {
   --orbit-label-space: 9.5rem;
-  --orbit-circle-size: clamp(9rem, 22vw, 14rem);
+  --orbit-circle-size: clamp(9rem, 33svh, 30rem);
   --orbit-radius: calc(var(--orbit-circle-size) / 2);
   --orbit-gap: .55rem;
   --orbit-canvas: calc(var(--orbit-circle-size) + (var(--orbit-label-space) * 2));
@@ -685,7 +685,7 @@ nav.scrolled {
   mix-blend-mode: normal;
 }
 
-.nav-logo svg { height: 24px; }
+.nav-logo svg { height: clamp(24px, 2.5svh, 30px); }
 
 .nav-links a {
   font-size: 9px;
@@ -731,6 +731,7 @@ nav.scrolled {
 .hero-kicker {
   top: 16%;
   left: 32px;
+  font-size: clamp(9px, 0.95svh, 11px);
 }
 
 .hero-kicker span { color: var(--acid); }
@@ -792,12 +793,12 @@ nav.scrolled {
 
 .raevr-orbit-intro {
   color: rgba(255,255,255,.72);
-  font-size: 10px;
+  font-size: clamp(10px, 1.06svh, 12.5px);
   letter-spacing: .14em;
 }
 
 .raevr-orbit-item {
-  font-size: 10px;
+  font-size: clamp(10px, 1.06svh, 12.5px);
   letter-spacing: .1em;
   color: rgba(255,255,255,.28);
 }
@@ -940,6 +941,9 @@ footer { background: #0b0913; }
   .hero-side-note { display: none; }
   .hero-legend { left: 20px; right: 20px; font-size: 7px; }
   .hero-ghost { font-size: 34vw; }
+  /* re-pin the mobile type: the desktop clamps above sit later in the cascade */
+  .raevr-orbit-intro,
+  .raevr-orbit-item { font-size: 9px; }
   #hero.raevr-orbit-shell .raevr-orbit-stage { transform: scale(.96); }
   section:not(#hero) { padding-top: 96px; padding-bottom: 96px; }
   #built::before { display: none; }
@@ -1059,7 +1063,7 @@ footer { background: #0b0913; }
         <span class="pill-label">Codex</span>
       </div>
       <div class="pill">
-        <span class="pill-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="m21.818 4.516-1.05 4.148h2.175L24 4.516M19.41 14.04h2.17l1.04-4.08h-2.178m-2.41 9.523h2.154l1.056-4.147h-2.16m.193-5.377H5.55v.92l3.341 3.161h9.349m2.41-9.525H0v1.116l3.206 3.032H19.6m-8.372 7.58 3.43 3.24h2.205l1.05-4.147h-6.685"/></svg></span>
+        <span class="pill-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M19.66 5.57A10 10 0 1 0 19.66 18.43L18.43 17.4A8.4 8.4 0 1 1 18.43 6.6Z"/><path d="M12 8.8a3.2 3.2 0 1 1 0 6.4 3.2 3.2 0 0 1 0-6.4Z"/><path d="M21.2 10.1a1.9 1.9 0 1 1 0 3.8 1.9 1.9 0 0 1 0-3.8Z"/></svg></span>
         <span class="pill-label">Hermes Agent</span>
       </div>
       <div class="pill">
@@ -1112,7 +1116,7 @@ footer { background: #0b0913; }
         <span class="pill-label">Codex</span>
       </div>
       <div class="pill">
-        <span class="pill-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="m21.818 4.516-1.05 4.148h2.175L24 4.516M19.41 14.04h2.17l1.04-4.08h-2.178m-2.41 9.523h2.154l1.056-4.147h-2.16m.193-5.377H5.55v.92l3.341 3.161h9.349m2.41-9.525H0v1.116l3.206 3.032H19.6m-8.372 7.58 3.43 3.24h2.205l1.05-4.147h-6.685"/></svg></span>
+        <span class="pill-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M19.66 5.57A10 10 0 1 0 19.66 18.43L18.43 17.4A8.4 8.4 0 1 1 18.43 6.6Z"/><path d="M12 8.8a3.2 3.2 0 1 1 0 6.4 3.2 3.2 0 0 1 0-6.4Z"/><path d="M21.2 10.1a1.9 1.9 0 1 1 0 3.8 1.9 1.9 0 0 1 0-3.8Z"/></svg></span>
         <span class="pill-label">Hermes Agent</span>
       </div>
       <div class="pill">
