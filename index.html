@@ -729,12 +729,20 @@ nav.scrolled {
 }
 
 .hero-kicker {
-  top: 16%;
+  top: 14%;
   left: 32px;
-  font-size: clamp(9px, 0.95svh, 11px);
+  max-width: min(980px, 88vw);
+  font-family: var(--font-body);
+  font-weight: 900;
+  font-size: clamp(2.2rem, 4.2vw, 5.8rem);
+  letter-spacing: -.055em;
+  line-height: .9;
+  color: var(--white);
+  text-transform: uppercase;
 }
 
-.hero-kicker span { color: var(--acid); }
+.hero-kicker .hero-result { color: rgba(255,255,255,.62); }
+.hero-kicker .hero-accent { color: var(--acid); }
 
 .hero-side-note {
   right: 32px;
@@ -940,7 +948,8 @@ footer { background: #0b0913; }
 
   .hero-kicker {
     top: 13%;
-    font-size: clamp(12px, 1.15svh, 14px);
+    left: clamp(32px, 4vw, 72px);
+    font-size: clamp(2.6rem, 4.2vw, 5.8rem);
   }
   .hero-side-note,
   .hero-legend { font-size: 11px; }
@@ -999,7 +1008,13 @@ footer { background: #0b0913; }
 @media (max-width: 640px) {
   nav { padding: 18px 20px; }
   .nav-links { gap: 14px; }
-  .hero-kicker { top: 17%; left: 20px; }
+  .hero-kicker {
+    top: 15%;
+    left: 20px;
+    max-width: calc(100vw - 40px);
+    font-size: clamp(1.75rem, 8.5vw, 2.35rem);
+    line-height: .92;
+  }
   .hero-side-note { display: none; }
   .hero-legend { left: 20px; right: 20px; font-size: 7px; }
   .hero-ghost { font-size: 34vw; }
@@ -1040,7 +1055,7 @@ footer { background: #0b0913; }
      ============================================================ -->
 <section id="hero" class="raevr-orbit-shell" aria-label="What RAEVR builds">
   <div class="hero-atmosphere" aria-hidden="true"></div>
-  <h1 class="hero-kicker">INDEPENDENT AI STUDIO <span>—</span> RESULTS FIRST</h1>
+  <h1 class="hero-kicker">INDEPENDENT AI STUDIO<span class="hero-accent">.</span><br><span class="hero-result">AI DESIGNED BY HUMANS<span class="hero-accent">.</span></span></h1>
   <p class="hero-ghost" aria-hidden="true">RAEVR</p>
   <div class="raevr-orbit-stage">
     <p class="raevr-orbit-intro">RAEVR / BUILDS</p>
