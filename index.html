@@ -934,24 +934,63 @@ section:not(#hero) {
 
 footer { background: #0b0913; }
 
-/* Desktop legibility pass: preserve the composition while making the
-   editorial micro-type readable on large and high-density displays. */
+/* Desktop legibility and density pass. */
 @media (min-width: 641px) {
   .nav-links a { font-size: 12px; }
 
-  .hero-kicker { font-size: clamp(12px, 1.15svh, 14px); }
+  .hero-kicker {
+    top: 13%;
+    font-size: clamp(12px, 1.15svh, 14px);
+  }
   .hero-side-note,
   .hero-legend { font-size: 11px; }
 
+  .hero-atmosphere { width: min(72vw, 1100px); }
+  .hero-ghost {
+    font-size: clamp(10rem, 29vw, 30rem);
+    -webkit-text-stroke-color: rgba(255,255,255,.055);
+  }
+  #hero.raevr-orbit-shell .raevr-orbit-stage { transform: scale(1.58); }
   .raevr-orbit-intro,
   .raevr-orbit-item { font-size: clamp(12px, 1.35svh, 15px); }
 
-  .section-label { font-size: 13px; }
+  section:not(#hero) {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .section-label {
+    margin-bottom: 34px;
+    font-size: 13px;
+  }
+  #built::before { top: 98px; }
   #built::before,
   .proof-row::before { font-size: 11px; }
+  .proof-row {
+    min-height: 90px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
   .proof-tag { font-size: 13px; }
+  .conclusion { margin-top: 48px; }
 
+  #tools {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+  #tools .section-label { margin-bottom: 0; }
+  .marquee-wrap { margin-top: 30px; }
+  .pill {
+    padding: 13px 22px;
+    gap: 12px;
+  }
   .pill-label { font-size: 13px; }
+
+  #closing {
+    min-height: 76svh;
+    gap: 36px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
   .cta-email,
   .footer-left,
   .footer-right { font-size: 12px; }
