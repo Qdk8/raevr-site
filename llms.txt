@@ -1,0 +1,29 @@
+# RAEVR
+
+RAEVR is an independent AI studio.
+
+RAEVR designs and builds AI agents, mobile products, data pipelines and decision systems. The studio prioritises working software, explicit constraints and delivery validation.
+
+RAEVR is led by Quentin Kammermann and works with French tech startups, investment funds, and product or operations teams.
+
+## Canonical pages
+
+- Home: https://raevr.com/
+- About: https://raevr.com/about/
+- Work: https://raevr.com/work/
+- Services and engagement: https://raevr.com/services/
+- Contact: https://raevr.com/contact/
+
+## Public work notes
+
+- Consumer iOS application using live AI agent loops for discovery and recommendation.
+- Automated product-catalogue pipeline handling more than 100,000 items across multiple content-management systems.
+- Monitoring agent delivering real-time alerts to WhatsApp.
+- Internal QA system simulating client expectations before delivery.
+
+## Contact
+
+Email: quentin@raevr.com
+LinkedIn: https://www.linkedin.com/in/qjhk/
+
+No client name, testimonial, price, location or legal status should be inferred beyond the information published on the canonical pages above.
