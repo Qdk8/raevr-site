@@ -16,10 +16,10 @@ RAEVR is led by Quentin Kammermann and works with French tech startups, investme
 
 ## Public work notes
 
-- Consumer iOS application using live AI agent loops for discovery and recommendation.
+- Mobile urban discovery product powered by live signals and conversational AI.
 - Automated product-catalogue pipeline handling more than 100,000 items across multiple content-management systems.
-- Monitoring agent delivering real-time alerts to WhatsApp.
-- Internal QA system simulating client expectations before delivery.
+- Operational agent turning incoming requests into clear WhatsApp decisions.
+- Multilingual, mobile-first service landing built around direct WhatsApp conversion.
 
 ## Contact
 
